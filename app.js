@@ -53,7 +53,7 @@ app.get("/work", (req, res)=>{
 
 
 // connect server
-const port = 3000 || process.env;
+const port = 3000 || process.env.PORT;
 app.listen(port, () => {
   console.log(`Connected on port ` + port);
 });
